@@ -67,7 +67,7 @@
 .overlay {
     position: absolute;
     width: 30vw;
-    background-color: rgb(115, 228, 134);
+    background-color: rgb(106, 193, 121);
     font-size: 1rem;
     text-align: center;
     left: 0; 
@@ -86,7 +86,7 @@
     top: 0;
     right: 0;
     background-color: black;
-    border: 2px solid rgb(115, 228, 134);
+    border: 2px solid  rgb(106, 193, 121);
     color: white;
     display: flex;
     justify-content: center;
@@ -104,4 +104,27 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: darkred;
+}
+
+@media screen and (max-width: 1050px) {
+   
+    .error {
+        width: 80%;
+        padding: 0.8rem;
+    }
+
+    .field, .text {
+        width: 80%;
+    }
+
+    .errorMessage {
+        font-size: 1.2rem;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 80%;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
 }
