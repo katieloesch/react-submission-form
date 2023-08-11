@@ -64,8 +64,20 @@ const Form = () => {
         <textarea name='address' className={styles.text} placeholder='Address' value={formData.address} onChange={handleFormChange} autoComplete="off"></textarea>
         <input type='text' className={styles.field} name='dob' placeholder='Date of Birth' value={formData.dob} onChange={handleFormChange} autoComplete="off"></input>
         <input type='submit' className={styles.btn} value={loading ? 'Loading...' : 'Submit'}></input>
-        {showMessage && <div>Success! Your information has been saved.</div>}
-        {error && <div>{error}</div>}
+        {
+            showMessage && <div className={styles.overlay}>
+            <h1>Success! Your information has been saved.</h1>
+            <div className={styles.closeMessage} onClick={() => (setShowMessage(false))}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" viewBox="0 0 1024 1024"><path fill="white" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504L738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512L828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496L285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512L195.2 285.696a64 64 0 0 1 0-90.496z"/></svg>
+                        </div>
+            </div>
+        }
+        {
+            error && <div className={styles.error}>
+                        <h1 className={styles.errorMessage}>{error}</h1>
+                        
+                    </div>
+        }
        
     </form>
   )

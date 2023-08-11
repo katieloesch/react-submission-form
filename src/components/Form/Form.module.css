@@ -5,6 +5,7 @@
     justify-content: center;
     width: 100%;
     gap: 1rem;
+    position: relative;
 }
 
 .field, .text {
@@ -48,4 +49,59 @@
     cursor: pointer;
     scale: 1.05;
     color: black
+}
+
+.error {
+    color: white;
+    background-color: black;
+    width: 30vw;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+
+.errorMessage {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 30vw;
+    background-color: rgb(115, 228, 134);
+    font-size: 1rem;
+    text-align: center;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeMessage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    border: 2px solid rgb(115, 228, 134);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    width: 2.3em;
+    height: 2.3em;
+    text-align: center;
+
+}
+
+.closeMessage:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: darkred;
 }
