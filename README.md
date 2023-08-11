@@ -30,8 +30,8 @@ npx create-react-app react-submission-form
 
 ### font
 
-- 'Sulphur Point' by Dale Sattler
-  - https://fonts.google.com/specimen/Sulphur+Point
+- 'Epilogue' by Tyler Finck, ETC
+  - https://fonts.google.com/specimen/Epilogue
 
 ### Additional tools used:
 
