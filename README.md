@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# React Submit Information Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+- package manager used: npm - v9.5.0
+  - https://www.npmjs.com/package/npm
+- to install dependencies, run:
 
-In the project directory, you can run:
+```terminal
+npm install
+```
 
-### `npm start`
+## Technologies used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- This application is based in ReactJS (v18.2.0), JavaScript, JSX and CSS.
+  - it was created using the 'create-react-app' command
+  - https://create-react-app.dev/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```terminal
+npx create-react-app react-submission-form
+```
 
-### `npm test`
+### Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- react-icons (v4.10.1)
+  - https://react-icons.github.io/react-icons/
+  - https://www.npmjs.com/package/react-icons
+- firebase
+  - https://www.npmjs.com/package/firebase
 
-### `npm run build`
+### font
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 'Sulphur Point' by Dale Sattler
+  - https://fonts.google.com/specimen/Sulphur+Point
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Additional tools used:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Git / GitHub
+  - used for version control
+  - https://git-scm.com/
+  - https://github.com/https://github.com/
+- Visual Studio Code (VSCode)
+  - code editor used for writing CSS, JSX, JavaScript and ruby.
+- Google Chrome browser
+  - used for launching the website and displaying the application Google Chrome
+- Google Chrome Developer Tools: For troubleshooting and debugging
+  - https://www.google.com/intl/en_uk/chrome/
 
-### `npm run eject`
+## Deliverables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### MVP
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- create a form using React.js that allows users to submit information
+- the form should have the following features:
+  - fields for name, email address, and phone number
+  - validation to ensure that all required fields are filled in
+  - validation to ensure that the email address is valid
+  - a submit button that sends the form data to a server (you can use a mock server or API, or use a tool like Mockoon or Postman to mock the server)
+  - a success message that is displayed upon successful submission
+  - clear the form fields upon successful submission
+- use Create React App to set up the project
+- use functional components and hooks (e.g., useState, useEffect)
+- use CSS modules or styled components for styling
+- use a form validation library like Formik or React Hook Form to handle form validation
+- use Git for version control and commit frequently with clear commit messages
+- write clear and concise code, and comment where necessary
+- host the application on a public Git repository and provide the link to the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Stretch Goals
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- add more fields to the form, such as address or date of birth
+- use a serverless architecture with a service like Firebase or AWS Lambda to handle form submissions
+- implement real-time validation as the user fills out the form, such as showing an error message when the user types of an invalid email address
+- add client-side error messages for each field that is invalid
