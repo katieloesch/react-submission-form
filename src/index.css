@@ -1,16 +1,16 @@
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
 
 /* variables */
 :root {
-  --font-main: 'Sulphur Point', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-main: 'Epilogue', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
   /* color variables */
 
-  --primary: rgb(47, 30, 120);
-  --primary-light: rgb(59, 38, 151);
-  --secondary: rgb(170, 255, 241);
-  --focus: rgb(39, 138, 225);
+  --primary: #ffee6f;
+  --primary-light: #fef9be;
+  --secondary: rgb(35, 35, 35);
+  --focus: #ffee6f;
   --white: rgb(255, 255, 255);
   --green: rgb(32, 171, 88);
 
@@ -31,4 +31,5 @@ ul {
 body {
   line-height: 1.25;
   min-height: 100vh;
+  background-color: darkred;
 }

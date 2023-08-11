@@ -58,12 +58,12 @@ const Form = () => {
 
   return (
     <form className={styles.Form} onSubmit={handleFormSubmit}>
-        <input type='text' name='name' required placeholder='Name' value={formData.name} onChange={handleFormChange} autoComplete="off"></input>
-        <input type='email' name='email' required placeholder='Email' value={formData.email} onChange={handleFormChange} autoComplete="off"></input>
-        <input type='text' name='phone' placeholder='Phone Number' value={formData.phone} onChange={handleFormChange} autoComplete="off"></input>
-        <textarea name='address' placeholder='Address' value={formData.address} onChange={handleFormChange} autoComplete="off"></textarea>
-        <input type='text' name='dob' placeholder='Date of Birth' value={formData.dob} onChange={handleFormChange} autoComplete="off"></input>
-        <input type='submit' value={loading ? 'Loading...' : 'Submit'}></input>
+        <input type='text' name='name' className={styles.field} required placeholder='Name' value={formData.name} onChange={handleFormChange} autoComplete="off"></input>
+        <input type='email' name='email' className={styles.field} required placeholder='Email' value={formData.email} onChange={handleFormChange} autoComplete="off"></input>
+        <input type='text' name='phone' className={styles.field} placeholder='Phone Number' value={formData.phone} onChange={handleFormChange} autoComplete="off"></input>
+        <textarea name='address' className={styles.text} placeholder='Address' value={formData.address} onChange={handleFormChange} autoComplete="off"></textarea>
+        <input type='text' className={styles.field} name='dob' placeholder='Date of Birth' value={formData.dob} onChange={handleFormChange} autoComplete="off"></input>
+        <input type='submit' className={styles.btn} value={loading ? 'Loading...' : 'Submit'}></input>
         {showMessage && <div>Success! Your information has been saved.</div>}
         {error && <div>{error}</div>}
        
